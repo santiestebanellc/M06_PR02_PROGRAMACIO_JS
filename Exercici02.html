@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 02</title>
+    <link rel="stylesheet" href="Exercici02.css">
+    <script src="Exercici02.js" defer></script>
+</head>
+<body>
+    <h1>Propietats del Navegador</h1>
+    <div id="taula_propietats"></div>
+
+    <br><br>
+
+    <h1>Compte Enrere</h1>
+    <label for="minuts">Minuts:</label>
+    <input type="number" id="minuts" min="0" value="0">
+    <label for="segons">Segons:</label>
+    <input type="number" id="segons" min="0" max="59" value="0">
+    <br><br>
+    <button id="startBtn">Inicia</button>
+    <button id="pauseBtn">Pausa</button>
+    <button id="stopBtn">Atura</button>
+    <h2 id="timeDisplay">00:00</h2>
+
+    <audio id="alarm" src="FANFARE1.WAV" type="audio/wav"></audio>
+
+    <br><br>
+
+    <h1>Rellotge i Alarma</h1>
+
+    <h2 id="rellotge">00:00:00</h2>
+
+    <h3>Configura l'Alarma:</h3>
+    <label for="alarmHour">Hora:</label>
+    <input type="number" id="alarmHour" min="0" max="23" value="0">
+    <label for="alarmMinute">Minuts:</label>
+    <input type="number" id="alarmMinute" min="0" max="59" value="0">
+    <label for="alarmSecond">Segons:</label>
+    <input type="number" id="alarmSecond" min="0" max="59" value="0">
+    <br><br>
+    
+    <button id="setAlarmBtn">Establir Alarma</button>
+    <button id="stopAlarmBtn">Atura Alarma</button>
+
+    <h3>Selecciona Música per l'Alarma:</h3>
+    <select id="musicSelect">
+        <option value="FANFARE1.WAV">Fanfare</option>
+        <option value="DRUMC0.WAV">Drum</option>
+    </select>
+
+    <h3>Volum de l'Alarma:</h3>
+    <input type="range" id="alarmVolume" min="0" max="1" step="0.1" value="1">
+    
+    <button id="playMusicBtn">Reprodueix Música</button>
+    <button id="stopMusicBtn">Atura Música</button>
+
+    <audio id="alarmSound" src="FANFARE1.WAV" type="audio/wav"></audio>
+
+</body>
+</html>
